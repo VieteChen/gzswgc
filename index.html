@@ -1,0 +1,417 @@
+<!DOCTYPE HTML
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <TITLE>广州市自来水工程有限公司--首页</TITLE>
+  <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <META NAME="copyright" CONTENT="广州市自来水工程有限公司">
+  <META NAME="Author" CONTENT="广州市自来水工程有限公司">
+  <META NAME="Robots" CONTENT="all">
+  <META NAME="Keywords" CONTENT="广州市自来水工程有限公司">
+  <META NAME="Description" CONTENT="广州市自来水工程有限公司">
+  <LINK rel="shortcut icon" type=image/x-icon href="/favicon.ico">
+  <LINK rel=Bookmark type=image/x-icon href="/favicon.ico">
+  <LINK rel=stylesheet type=text/css href="static/css/public.css">
+  <SCRIPT type=text/javascript src="static/js/jquery.js"></SCRIPT>
+</HEAD>
+
+<BODY>
+  <link rel=stylesheet type=text/css href="static/css/public.css">
+  <script type="text/javascript">
+    function hid(mtt) {
+      mtt.style.display = "none";
+    }
+    function shw(mtt) {
+      mtt.style.display = "block";
+    }
+  </script>
+  <div class="head main">
+    <ul class="logo fl"><A title=广州市自来水工程有限公司 href="index.asp">&nbsp;</A></ul>
+    <ul class="fl" style="width:570px; padding-top:15px; text-align: right;">
+      <li> <a href="index.asp">设为首页</a> | <a href="index.asp">加入收藏</a> | <a href="index.asp">OA办公</a> | <a
+          href="index.asp">企业邮箱</a></li>
+    </ul>
+  </div>
+  <div class="clear main dh">
+    <ul>
+      <li><b><a href="index.asp">首页</a></b></li>
+      <li onmouseout="hid(ny1)" onmouseover="shw(ny1)">
+        <div class="dhh" id="ny1">
+
+          <dl> <a href="About.asp?id=1">公司简介</a></dl>
+
+          <dl> <a href="About.asp?id=11">公司架构</a></dl>
+
+          <dl> <a href="About.asp?id=19">公司资质</a></dl>
+
+          <dl> <a href="Certificate.asp">资质证书</a></dl>
+
+        </div>
+        <b><a href="About.asp">关于我们</a></b>
+      </li>
+      <li onmouseout="hid(ny2)" onmouseover="shw(ny2)">
+        <div class="dhh" id="ny2">
+
+
+          <dl style="display:none;"> <a href="Perspective.asp">新视角</a></dl>
+          <dl> <a href="Events.asp">企业活动</a></dl>
+        </div>
+        <b><a href="Culture.asp">企业文化</a></b>
+      </li>
+      <li><b><a href="Society.asp">党群工作</a></b></li>
+      <li onmouseout="hid(ny3)" onmouseover="shw(ny3)">
+        <div class="dhh" id="ny3">
+
+          <dl> <a href="News.asp?sid=37">企业动态</a></dl>
+
+          <dl> <a href="News.asp?sid=40">在建项目</a></dl>
+
+        </div>
+        <b><a href="News.asp">综合资讯</a></b>
+      </li>
+      <li><b><a href="Product.asp">成功案例</a></b></li>
+      <li onmouseout="hid(ny4)" onmouseover="shw(ny4)">
+        <div class="dhh" id="ny4" style="margin-left:-2px;">
+
+          <dl> <a href="Job.asp?sid=41">招工招标信息</a></dl>
+
+        </div>
+        <b><a href="Job.asp">招工招标</a></b>
+      </li>
+      <li><b><a href="Contact.asp">联系我们</a></b></li>
+    </ul>
+  </div>
+  <div class="clear"> </div>
+  <!--Banner-->
+  <DIV class="banneri_box clear">
+    <DIV id=banneri>
+      <DIV id=banneri_bg></DIV>
+      <!--标题背景-->
+      <!--	<div id="banneri_info"></div> -->
+      <UL>
+
+        <LI class=on>1</LI>
+
+        <LI>2</LI>
+
+        <LI>3</LI>
+
+      </UL>
+      <DIV id=banneri_list>
+
+        <A style="BACKGROUND: url(static/images/2017817_92737_1920.jpg) no-repeat center top" href="">&nbsp;</A>
+
+        <A style="BACKGROUND: url(static/images/2019423_15817_3569.jpg) no-repeat center top"
+          href="index.asp">&nbsp;</A>
+
+        <A style="BACKGROUND: url(static/images/2017817_114938_2951.jpg) no-repeat center top"
+          href="index.asp">&nbsp;</A>
+
+      </DIV>
+    </DIV>
+  </DIV>
+  <SCRIPT type=text/javascript>
+	 var t = n = 0, count;
+ 	 $(document).ready(function(){ 
+	 count=$("#banneri_list a").length; 
+	 $("#banneri_list a:not(:first-child)").hide();
+	 $("#banneri_info").html($("#banneri_list a:first-child").find("img").attr('alt'));
+	 $("#banneri_info").click(function(){window.open($("#banneri_list a:first-child").attr('href'), "_blank")}); 
+	 $("#banneri li").click(function() {
+	 var i = $(this).text() - 1;//获取Li元素内的值，即1，2，3，4         
+     n = i; 
+	 if (i >= count) return; 
+	 $("#banneri_info").html($("#banneri_list a").eq(i).find("img").attr('alt')); 
+	 $("#banneri_info").unbind().click(function(){window.open($("#banneri_list a").eq(i).attr('href'), "_blank")})
+	 $("#banneri_list a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
+	 document.getElementById("banneri").style.background="";
+	 $(this).toggleClass("on");
+	 $(this).siblings().removeAttr("class");}); 
+	 t = setInterval("showAuto()", 7000);
+	 $("#banneri").hover(function(){clearInterval(t)}, function(){t = setInterval("showAuto()", 7000);}); })
+	 function showAuto(){ 
+	 n = n >=(count - 1) ? 0 : ++n; 
+	 $("#banneri li").eq(n).trigger('click');
+	 }
+	 </SCRIPT>
+  <!--Banner end-->
+
+  <!--首页内容-->
+  <div class="main">
+    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+      <tr>
+        <td width="28%" height="100" valign="top">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0" class="btbj">
+            <tr>
+              <td width="130" valign="top" class="btt">图片要闻</td>
+              <td>&nbsp;</td>
+              <td width="70" class="btmore"><a href="index.asp">更多</a>&nbsp;&nbsp;</td>
+            </tr>
+          </table>
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td height="210" align="center" valign="top" class="btbr">
+                <script type="text/javascript">
+                  var width = 260; var focus_height = 198; var text_height = 0;
+                  var swf_height = focus_height + text_height;
+                  var pics = ''; var links = ''; var texts = '';
+
+                  pics += 'Upload/PicFiles/201798_11744_2298.jpg|'; links += 'NewsView.asp?id=251|'; texts += '“天鸽”过境，抢险二队持续奋战四天四夜，胜利完成珠海驰援任务|';
+
+                  pics += 'Upload/PicFiles/201798_10345_5266.jpg|'; links += 'NewsView.asp?id=250|'; texts += '“天鸽”袭来，珠海告急，抢险二队，紧急驰援|';
+
+                  pics += 'Upload/PicFiles/201795_145957_9425.jpg|'; links += 'NewsView.asp?id=248|'; texts += '市自来水工程公司上下一心抗“妮妲”， 力保羊城平安渡险情|';
+
+                  pics += 'Upload/PicFiles/201794_114117_6537.jpg|'; links += 'NewsView.asp?id=247|'; texts += '市自来水工程公司启动紧急抢修迅速完成荔湾路供水管爆漏抢修|';
+
+                  pics += 'Upload/PicFiles/201794_11207_2809.jpg|'; links += 'NewsView.asp?id=245|'; texts += '全省最大口径采用不锈钢内衬非开挖技术施工的供水管道顺利完工|';
+
+
+                  pics = pics.substring(0, pics.length - 1);
+                  links = links.substring(0, links.length - 1);
+                  texts = texts.substring(0, texts.length - 1);
+                  document.write('<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="' + width + '" height="' + swf_height + '">');
+                  document.write('<param name="movie" value="images/player.swf"/>');
+                  document.write('<param name="quality" value="high"/><param name="bgcolor" value="#F0F0F0"/>');
+                  document.write('<param name="menu" value="false"/><param name="wmode" value="opaque"/>');
+                  document.write('<param name="wmode" value="transparent">');
+                  document.write('<param name="FlashVars" value="pics=' + pics + '&links=' + links + '&texts=' + texts + '&borderwidth=' + width + '&borderheight=' + focus_height + '&textheight=' + text_height + '"/>');
+                  document.write('<embed src="static/flash/player.swf" width="' + width + '" height="' + swf_height + '" FlashVars="pics=' + pics + '&links=' + links + '&texts=' + texts + '&borderwidth=' + width + '&borderheight=' + focus_height + '&textheight=' + text_height + '" menu="false" wmode="opaque" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"></embed>');
+                  document.write('</object>');
+                </script>
+              </td>
+            </tr>
+            <tr>
+              <td height="5" class="btbg"><img src="static/picture/spacer.gif" width="1" height="1"></td>
+            </tr>
+          </table>
+        </td>
+        <td width="41%" valign="top" style="padding:0 10px 0 10px;">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0" class="btbj">
+            <tr>
+              <td width="130" valign="top" class="btt">公司简介</td>
+              <td>&nbsp;</td>
+              <td width="70" class="btmore"><a href="About.asp">更多</a>&nbsp;&nbsp;</td>
+            </tr>
+          </table>
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td height="168" valign="top" class="btbr connt" style="padding:5px 10px 10px 10px; line-height:21px;">
+                <p style="text-align:justify;">
+                  <span>广州市自来水工程有限公司（以下简称公司）是广州市水务投资集团有限公司的全资子公司，成立于1982年8月，注册资本26,537.27万元，专业从事市政工程、房建、装饰装修、机电安装、园林绿化、水利水电等工程施工，及市政设施维修养护、环境污染治理、设施运营。公司及各子公司拥有多项总承包一级资质及专业承包资质，除工程施工外，还具备工程设计、质量检测以及较强的钢管件制作生产能力。公司拥有市级专业内涝防汛抢险队伍——广州市第二防汛机动抢险队，承担着广州市防汛抢险和供排水爆漏抢修抢险等社会职责，是广州市三防内涝核心抢险队伍、重要的防汛力量。</span>
+                </p>
+                <p style="text-align:justify;">
+                  公司本着“勤以修业、诚以致远”的企业精神，立足本市走向全国，承建的工程项目从广州地区覆盖至珠三角地区乃至全国，以安全文明、质量优良、工期保证、服务到位享誉各地，工程屡获国家市政金杯示范工程奖、中国水利工程优质（大禹）奖、安全文明施工样板工程奖等，多项技术成果获省市级科学进步奖、技术专利。
+                </p>
+                <p style="text-align:justify;">
+                  <span>公司一直坚持以市场为导向、以质量为生命、以诚信为根本、以用户为中心，赢得了广大客户、行业主管部门、金融机构的充分信赖，曾被授予中国建筑施工综合实力百强企业、广州建筑业十强企业等荣誉，连续27年被评为广东省“守合同重信用”单位，历年被银行评为信用AAA级企业，首批被评为广州建筑业诚信企业、广东省市政行业施工企业、设施养护诚信评价AAAAA级企业。<br />
+                  </span>
+                </p>
+                <div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td height="5" class="btbg"><img src="static/picture/spacer.gif" width="1" height="1"></td>
+            </tr>
+          </table>
+        </td>
+        <td width="31%" valign="top">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0" class="btbj">
+            <tr>
+              <td width="130" valign="top" class="btt">综合资讯</td>
+              <td>&nbsp;</td>
+              <td width="70" class="btmore"><a href="News.asp">更多</a>&nbsp;&nbsp;</td>
+            </tr>
+          </table>
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td height="220" align="center" valign="top" class="btbr" style="padding-top:2px; padding-left:10px;">
+
+                <table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
+
+                  <tr>
+                    <td width="81%" height="26" align="left" class="news" style="line-height:22px; color:#9E9E9E;">
+                      <img src="static/picture/dd.gif" /> <a href="NewsView.asp?id=283">市国资委党委第一巡察组进驻巡察市自来水工…</a></td>
+                  </tr>
+
+                  <tr>
+                    <td width="81%" height="26" align="left" class="news" style="line-height:22px; color:#9E9E9E;">
+                      <img src="static/picture/dd.gif" /> <a href="NewsView.asp?id=282">巡察公告</a></td>
+                  </tr>
+
+                  <tr>
+                    <td width="81%" height="26" align="left" class="news" style="line-height:22px; color:#9E9E9E;">
+                      <img src="static/picture/dd.gif" /> <a href="NewsView.asp?id=281">广州市自来水工程有限公司积极组织新冠肺炎…</a></td>
+                  </tr>
+
+                  <tr>
+                    <td width="81%" height="26" align="left" class="news" style="line-height:22px; color:#9E9E9E;">
+                      <img src="static/picture/dd.gif" /> <a href="NewsView.asp?id=280">广州市自来水工程有限公司组织开展在建重点…</a></td>
+                  </tr>
+
+                  <tr>
+                    <td width="81%" height="26" align="left" class="news" style="line-height:22px; color:#9E9E9E;">
+                      <img src="static/picture/dd.gif" /> <a href="NewsView.asp?id=279">广州市自来水工程有限公司获一项国家专利授…</a></td>
+                  </tr>
+
+                  <tr>
+                    <td width="81%" height="26" align="left" class="news" style="line-height:22px; color:#9E9E9E;">
+                      <img src="static/picture/dd.gif" /> <a href="NewsView.asp?id=278">防控疫情勇担当，检查工作不断档</a></td>
+                  </tr>
+
+                  <tr>
+                    <td width="81%" height="26" align="left" class="news" style="line-height:22px; color:#9E9E9E;">
+                      <img src="static/picture/dd.gif" /> <a href="NewsView.asp?id=277">珠海市供水机械工程有限公司来访广州市自来…</a></td>
+                  </tr>
+
+                  <tr>
+                    <td width="81%" height="26" align="left" class="news" style="line-height:22px; color:#9E9E9E;">
+                      <img src="static/picture/dd.gif" /> <a href="NewsView.asp?id=276">广州市自来水工程有限公司落实“三强化”监…</a></td>
+                  </tr>
+
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td height="5" class="btbg"><img src="static/picture/spacer.gif" width="1" height="1"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0"
+      style="background-image:url(static/images/yz08.jpg); margin-bottom:8px;">
+      <tr>
+        <td width="5%"><img src="static/picture/yz07.jpg" width="46" height="184"></td>
+        <td width="94%" valign="top">
+          <DIV id=demo style="OVERFLOW: hidden; WIDTH: 940px; margin-top:20px;">
+            <TABLE cellSpacing=0 cellPadding=0 width="14%" border=0>
+              <TR>
+                <TD id=demo1 vAlign=center>
+
+                  <table border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+
+                      <td height="20" align="center" valign="top"
+                        style="line-height:40px; padding:0px 18px 2px 15px;background-image:url(static/images/yz10.jpg); background-repeat:no-repeat; ">
+                        <a href="ProductViews.asp?id=152"><img src='static/picture/2015824_92038_5894.jpg' width="170"
+                            height="123" border="0"></a><br>
+                        <a href="ProductViews.asp?id=152">快速管道潜望镜检测</a></td>
+
+                      <td height="20" align="center" valign="top"
+                        style="line-height:40px; padding:0px 18px 2px 15px;background-image:url(static/images/yz10.jpg); background-repeat:no-repeat; ">
+                        <a href="ProductViews.asp?id=150"><img src='static/picture/2015821_91925_8232.jpg' width="170"
+                            height="123" border="0"></a><br>
+                        <a href="ProductViews.asp?id=150">陆居路防涝抢险现场</a></td>
+
+                      <td height="20" align="center" valign="top"
+                        style="line-height:40px; padding:0px 18px 2px 15px;background-image:url(static/images/yz10.jpg); background-repeat:no-repeat; ">
+                        <a href="ProductViews.asp?id=149"><img src='static/picture/2015821_91759_5760.jpg' width="170"
+                            height="123" border="0"></a><br>
+                        <a href="ProductViews.asp?id=149">科韵路污水管道塌陷抢险</a></td>
+
+                      <td height="20" align="center" valign="top"
+                        style="line-height:40px; padding:0px 18px 2px 15px;background-image:url(static/images/yz10.jpg); background-repeat:no-repeat; ">
+                        <a href="ProductViews.asp?id=148"><img src='static/picture/2015821_9164_6208.jpg' width="170"
+                            height="123" border="0"></a><br>
+                        <a href="ProductViews.asp?id=148">中心城区防暴雨内涝抢险</a></td>
+
+                      <td height="20" align="center" valign="top"
+                        style="line-height:40px; padding:0px 18px 2px 15px;background-image:url(static/images/yz10.jpg); background-repeat:no-repeat; ">
+                        <a href="ProductViews.asp?id=147"><img src='static/picture/2015821_91432_8451.jpg' width="170"
+                            height="123" border="0"></a><br>
+                        <a href="ProductViews.asp?id=147">内环路隔音墙修复</a></td>
+
+                      <td height="20" align="center" valign="top"
+                        style="line-height:40px; padding:0px 18px 2px 15px;background-image:url(static/images/yz10.jpg); background-repeat:no-repeat; ">
+                        <a href="ProductViews.asp?id=133"><img src='static/picture/2014818_145412_5094.jpg' width="170"
+                            height="123" border="0"></a><br>
+                        <a href="ProductViews.asp?id=133">城市内涝排水抢险便民服务</a></td>
+
+                    </tr>
+                  </table>
+
+                </TD>
+                <TD id=demo2 vAlign=top></TD>
+              </TR>
+            </TABLE>
+          </DIV>
+        </td>
+        <SCRIPT language=JavaScript>
+          var speed = 20;
+          demo2.innerHTML = demo1.innerHTML;
+
+          function Marquee() {
+            if (demo2.offsetWidth <= demo.scrollLeft) {
+              demo.scrollLeft = demo.scrollLeft - demo1.offsetWidth;
+            }
+            else {
+              demo.scrollLeft++;
+            }
+          }
+
+          var MyMar = setInterval(Marquee, speed);
+
+          demo.onmouseover = function () { clearInterval(MyMar); }
+          demo.onmouseout = function () { MyMar = setInterval(Marquee, speed); }
+        </SCRIPT>
+        <td width="1%" align="right"><img src="static/picture/yz09.jpg" width="9" height="184"></td>
+      </tr>
+    </table>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0"
+      style="background-image:url(static/images/yz13.jpg); margin-bottom:8px;">
+      <tr>
+        <td height="53" valign="top"
+          style="background-image:url(static/images/yz12.jpg); background-repeat: no-repeat; padding:15px 10px 0 15px; line-height:23px;">
+
+          <a href="http://www.gzgz.gov.cn/" target="_blank"> 广州市人民政府国有资产监督管理委员会 </a>&nbsp;&nbsp;&nbsp;
+
+          <a href="http://www.gzwater.gov.cn/portal/site/site/portal/gzswj/index.portal" target="_blank"> 广州市水务局
+          </a>&nbsp;&nbsp;&nbsp;
+
+          <a href="http://www.gzwaterinvest.com/" target="_blank"> 广州市水务投资集团有限公司 </a>&nbsp;&nbsp;&nbsp;
+
+          <a href="http://www.gzcc.gov.cn/" target="_blank"> 广州市住房和城乡建设局 </a>&nbsp;&nbsp;&nbsp;
+
+          <a href="http://www.gzjt.gov.cn" target="_blank"> 广州市交通运输局 </a>&nbsp;&nbsp;&nbsp;
+
+          <a href="http://www.gzlyyl.gov.cn/" target="_blank"> 广州市林业和园林局 </a>&nbsp;&nbsp;&nbsp;
+
+          <a href="http://www.gzwatersupply.com/2010commom/div2010index.html2" target="_blank"> 广州市自来水有限公司
+          </a>&nbsp;&nbsp;&nbsp;
+
+          <a href="http://www.gzsewage.com/" target="_blank"> 广州市净水有限公司 </a>&nbsp;&nbsp;&nbsp;
+
+        </td>
+      </tr>
+      <tr>
+        <td><img src="static/picture/yz14.jpg" width="1002" height="13"></td>
+      </tr>
+
+    </table>
+
+  </div>
+  <LINK rel=stylesheet type=text/css href="static/css/public.css">
+  <!--footer-->
+  <div class=" clear ftbg">
+
+    <div class="main">
+      <ul>
+        <li class="bdh"><a href="index.asp">首页</a>|<A href="About.asp">关于我们</A>|<A href="Culture.asp">企业文化</A>|<A
+            href="Society.asp">党群工作 </A>|<A href="News.asp">综合资讯</A>|<A href="Product.asp">成功案例</A>|<A
+            href="Contact.asp">联系我们</A>
+        </li>
+        <li class="bot">
+          版权所有&nbsp;广州市自来水工程有限公司&nbsp;&nbsp;地址：广州市大沙头3号&nbsp;邮编：510100&nbsp;&nbsp;联系电话：020-83827397&nbsp;<br>
+          传真号码：020-83798426<br>
+          &nbsp; <a href="http://beian.miit.gov.cn" target="_blank"> 粤ICP备11050356 </a> &nbsp; 技术支持：<a
+            href='Http://www.win580.com' target='_blank' title='赢在网络'>赢在网络</a></li>
+      </ul>
+    </div>
+    <!--footer end-->
+
+</BODY>
+
+</html>
